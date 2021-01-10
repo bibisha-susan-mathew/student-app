@@ -14,27 +14,41 @@
     <table class="table table-borderless">
        <tr>
            <td>NAME</td>
-           <td><input type="text" class="form-control"></td>
+           <td><input id="name" type="text" class="form-control"></td>
        </tr>
        <tr>
            <td>ROLL NO</td>
-           <td><input type="text" class="form-control"></td>
+           <td><input id="rn" type="text" class="form-control"></td>
        </tr>
        <tr>
            <td>ADMN NO</td>
-           <td><input class="form-control" type="text"></td>
+           <td><input id="an" class="form-control" type="text"></td>
        </tr>
        <tr>
            <td>COLLEGE</td>
-           <td><input type="text" class="form-control"></td>
+           <td><input id="clg" type="text" class="form-control"></td>
        </tr>
         <tr>
             <td></td>
-            <td><Button class=" btn btn-info">SUBMIT</Button></td>
+            <td><Button onclick="skul()" class=" btn btn-info">SUBMIT</Button></td>
         </tr>
     </table>
     </div>
     </div>
     </div>
+
+    <script>
+        function skul(){
+            var getName=document.getElementById("name").value
+            var getRn=document.getElementById("rn").value
+            var getAdmnNo=document.getElementById("an").value
+            var getClg=document.getElementById("clg").value
+
+           console.log(getName)
+           console.log(getRn)
+           console.log(getAdmnNo)
+           console.log(getClg)
+        }
+    </script>
 </body>
 </html>
